@@ -4,6 +4,12 @@ Get Google Trends data in Python without getting blocked: interest over time, in
 
 Google has no official public Google Trends API. This script gets the data through the [Google Trends Scraper](https://apify.com/data_xplorer/google-trends-fast-scraper) Actor on Apify. The Actor handles Google's rate limits and proxies, so your code only sends a keyword and receives JSON.
 
+## Video
+
+[![Google Trends Scraper: Trending Searches and Keyword Trends as Clean Data](https://img.youtube.com/vi/jOgshmxVvWk/maxresdefault.jpg)](https://www.youtube.com/watch?v=jOgshmxVvWk)
+
+*Video: how the Google Trends Scraper works.*
+
 ## What you can do
 
 | Task | Command | Output |
@@ -108,6 +114,10 @@ df = pd.read_csv("interest_over_time.csv", parse_dates=["date"])
 df.pivot(index="date", columns="keyword", values="value").plot()
 ```
 
+
+## Other languages
+
+Prefer JavaScript? The same tool for Node.js: [google-trends-api-node](https://github.com/dataxplore19/google-trends-api-node).
 
 ## FAQ
 
