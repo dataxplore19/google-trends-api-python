@@ -4,6 +4,8 @@ Get Google Trends data in Python without getting blocked: interest over time, in
 
 Google has no official public Google Trends API. This script gets the data through the [Google Trends Scraper](https://apify.com/data_xplorer/google-trends-fast-scraper) Actor on Apify. The Actor handles Google's rate limits and proxies, so your code only sends a keyword and receives JSON.
 
+> Click **Watch > Custom > Releases** at the top of this page to be notified when the Actor gets new features. See the [changelog](CHANGELOG.md).
+
 ## Video
 
 [![Google Trends Scraper: Trending Searches and Keyword Trends as Clean Data](https://img.youtube.com/vi/jOgshmxVvWk/maxresdefault.jpg)](https://www.youtube.com/watch?v=jOgshmxVvWk)
