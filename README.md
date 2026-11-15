@@ -121,6 +121,8 @@ df.pivot(index="date", columns="keyword", values="value").plot()
 
 Prefer JavaScript? The same tool for Node.js: [google-trends-api-node](https://github.com/dataxplore19/google-trends-api-node).
 
+For AI assistants (Claude, Cursor, VS Code): the [google-trends-mcp-server](https://github.com/dataxplore19/google-trends-mcp-server) MCP server. Without code, in n8n: [n8n templates](https://github.com/dataxplore19/n8n-google-trends-news-templates).
+
 ## FAQ
 
 ### Is there an official Google Trends API?
