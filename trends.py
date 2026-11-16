@@ -61,6 +61,10 @@ def interest(args):
             print(f"{keyword}: no data")
             continue
         item = items[0]
+        if item.get("error"):
+            # e.g. not enough Google searches for this keyword, period and country
+            print(f"{keyword}: {item['error']}")
+            continue
         series = item["timeline_data"].get(keyword, {})
         for day, value in series.items():
             timeline.append([day, keyword, value])

@@ -49,4 +49,5 @@ for s in item["trending_searches"]:
 - `keyword` takes a single search term. A comma inside it is treated as part of the term, not as a list. Run one call per keyword.
 - Each series is scaled 0-100 on its own peak, so values of two separate calls are not comparable in absolute volume.
 - `timeline_data` can contain an `isPartial` key next to the keyword: ignore it when reading the series.
+- When no series can be returned, the item has an `error` field instead, in plain words. For a keyword with too few searches it reads "Not enough search volume on Google Trends for ... Try a longer period or a wider area." (Actor v2.11+, returned within seconds).
 - Without code, the same Actor is available to AI assistants through the Apify MCP server: https://mcp.apify.com
