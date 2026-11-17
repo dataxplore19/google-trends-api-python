@@ -2,6 +2,10 @@
 
 Updates to the [Google Trends Scraper](https://apify.com/data_xplorer/google-trends-fast-scraper?fpr=6vi1cs) Actor used by this repository. Click **Watch > Custom > Releases** at the top of the page to be notified of new ones.
 
+## Actor v2.12 (2026-11-17)
+
+- Trending searches: when Google answers slowly through one IP, the Actor now switches to another IP after 12 seconds instead of 30, so slow runs finish much sooner. No change to the input or the output.
+
 ## Actor v2.11 (2026-11-16)
 
 - Keywords with too few searches now come back within seconds with a plain-words `error` field ("Not enough search volume on Google Trends for ..."), instead of retrying for over a minute and sometimes hitting the run timeout.
